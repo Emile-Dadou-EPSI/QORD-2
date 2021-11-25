@@ -156,9 +156,9 @@ def receive():
                         # Start Handling Thread For Client mettre cette partie la dans une auter fonction
                         thread = threading.Thread(target=handle, args=(cli,))
                         thread.start()
-                    broadcast("Connection is secured start communications")
+                    broadcast(b"Connection is secured start communications")
                 else:
-                    broadcast("connection is not secured stop")
+                    broadcast(b"connection is not secured stop")
                     break
             else:
                 print('with interception')
@@ -169,9 +169,9 @@ def receive():
                         # Start Handling Thread For Client mettre cette partie la dans une auter fonction
                         thread = threading.Thread(target=handle, args=(cli,))
                         thread.start()
-                    broadcast("Connection is secured start communications")
+                    broadcast(b"Connection is secured start communications")
                 else:
-                    broadcast("connection is not secured stop")
+                    broadcast(b"connection is not secured stop")
                     break
                 
 receive()
